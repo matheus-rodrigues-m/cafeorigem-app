@@ -1,0 +1,415 @@
+[
+ {
+  "cat": "Cafés Especiais",
+  "name": "Espresso",
+  "desc": "Curto, aveludado e com crema persistente. Notas de chocolate amargo e caramelo.",
+  "price": 10.4,
+  "img": "espresso",
+  "tags": [
+   "Destaque da Casa"
+  ],
+  "pair": [
+   "Pão de queijo",
+   "Brownie"
+  ],
+  "from": true,
+  "est": false
+ },
+ {
+  "cat": "Cafés Especiais",
+  "name": "Cappuccino Origem",
+  "desc": "A receita da casa: espresso, leite vaporizado e espuma cremosa, doçura de caramelo e cacau.",
+  "price": 20.4,
+  "img": "espresso",
+  "tags": [
+   "Destaque da Casa"
+  ],
+  "pair": [
+   "Biscoito provolone",
+   "Bolo de cenoura"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Cafés Especiais",
+  "name": "Cappuccino Cremoso Nutella",
+  "desc": "200 ml de cappuccino com creme de avelã e cacau. Aconchego em formato de xícara.",
+  "price": 20.4,
+  "img": "espresso",
+  "tags": [],
+  "pair": [
+   "Croissant recheado",
+   "Red Velvet"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Cafés Especiais",
+  "name": "Cappuccino Árabe",
+  "desc": "Espresso, leite e especiarias: canela, cardamomo e cravo-da-índia.",
+  "price": 21.6,
+  "img": "espresso",
+  "tags": [
+   "Novo"
+  ],
+  "pair": [
+   "Bolo de coco",
+   "Brownie"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Cafés Especiais",
+  "name": "Chocolates Quentes",
+  "desc": "Chocolate cremoso servido em taça, com chantilly. Para dias de chuva ou de saudade.",
+  "price": 24,
+  "img": "espresso",
+  "tags": [],
+  "pair": [
+   "Waffle",
+   "Brownie"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Métodos de Extração",
+  "name": "Café Especial Coado",
+  "desc": "Café coado 200 ml. Doçura natural, notas de caramelo e acidez cítrica equilibrada.",
+  "price": 14.4,
+  "img": "prensa",
+  "tags": [
+   "Destaque da Casa"
+  ],
+  "pair": [
+   "Pão de queijo",
+   "Bolo de mandioca com queijo"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Métodos de Extração",
+  "name": "Prensa Francesa",
+  "desc": "Sabor encorpado, óleos preservados e zero filtro. Servida na mesa, no seu tempo.",
+  "price": 28,
+  "img": "prensa",
+  "tags": [],
+  "pair": [
+   "Croissant recheado",
+   "Crumble de maçã"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Métodos de Extração",
+  "name": "Espresso com Borda Gourmet",
+  "desc": "Espresso em xícara com borda de chocolate ou de caramelo. Pede para os olhos e para o paladar.",
+  "price": 14,
+  "img": "espresso",
+  "tags": [
+   "Novo"
+  ],
+  "pair": [
+   "Waffle",
+   "Bolo de coco"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Métodos de Extração",
+  "name": "Café Especial em Grão",
+  "desc": "Grãos selecionados e torrados para você levar para casa. Embalagem a partir de 250 g.",
+  "price": 54,
+  "img": "beans",
+  "tags": [],
+  "pair": [
+   "Prensa em casa",
+   "Coado"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Salgados & Croissants",
+  "name": "Croissant Recheado",
+  "desc": "Croissant folhado e amanteigado com delícias regionais e um blend de queijos. Na foto: carne desfiada.",
+  "price": 31.2,
+  "img": "croissant",
+  "tags": [
+   "Destaque da Casa"
+  ],
+  "pair": [
+   "Cappuccino Origem",
+   "Café gelado"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Salgados & Croissants",
+  "name": "Pão de Queijo",
+  "desc": "Mini pães de queijo mineiros, crocantes por fora e macios por dentro. Saem quentinhos.",
+  "price": 12,
+  "img": "queijo",
+  "tags": [],
+  "pair": [
+   "Café coado",
+   "Cappuccino"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Salgados & Croissants",
+  "name": "Torta de Frango",
+  "desc": "Massa amanteigada e recheio cremoso de frango desfiado. Combina com suco natural.",
+  "price": 25.2,
+  "img": "",
+  "tags": [],
+  "pair": [
+   "Suco de maracujá",
+   "Café coado"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Salgados & Croissants",
+  "name": "Biscoito Provolone",
+  "desc": "Biscoito crocante de provolone, leve e aromático.",
+  "price": 13.2,
+  "img": "prov",
+  "tags": [],
+  "pair": [
+   "Espresso",
+   "Cappuccino"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Salgados & Croissants",
+  "name": "Pão na Chapa",
+  "desc": "Pão na chapa com queijo derretido e casquinha dourada. Clássico mineiro.",
+  "price": 14,
+  "img": "chapa",
+  "tags": [],
+  "pair": [
+   "Café coado",
+   "Cappuccino"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Confeitaria & Doces",
+  "name": "Taça da Felicidade",
+  "desc": "Camadas de red velvet e creme, morangos e uma bola de sorvete por cima.",
+  "price": 32,
+  "img": "taca",
+  "tags": [
+   "Destaque da Casa"
+  ],
+  "pair": [
+   "Espresso",
+   "Café gelado"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Confeitaria & Doces",
+  "name": "Red Velvet (fatia)",
+  "desc": "Massa aveludada e cacau suave, com creme de cream cheese e farelo vermelho.",
+  "price": 22.8,
+  "img": "taca",
+  "tags": [],
+  "pair": [
+   "Cappuccino Nutella",
+   "Espresso"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Confeitaria & Doces",
+  "name": "Crumble de Maçã",
+  "desc": "Torta com farofa crocante e maçã caramelizada. 100% vegana.",
+  "price": 22,
+  "img": "crumble",
+  "tags": [
+   "Vegano"
+  ],
+  "pair": [
+   "Café coado",
+   "Chá quente"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Confeitaria & Doces",
+  "name": "Waffle com Calda",
+  "desc": "Waffle dourado com chantilly, morangos e calda quente.",
+  "price": 26,
+  "img": "waffle",
+  "tags": [],
+  "pair": [
+   "Chocolate quente",
+   "Cappuccino"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Confeitaria & Doces",
+  "name": "Bolo de Cenoura (fatia)",
+  "desc": "Bolo caseiro e macio, para o café da tarde.",
+  "price": 16.8,
+  "img": "",
+  "tags": [],
+  "pair": [
+   "Cappuccino Origem",
+   "Café coado"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Confeitaria & Doces",
+  "name": "Brownie",
+  "desc": "Brownie denso e úmido, com cacau intenso.",
+  "price": 13.2,
+  "img": "",
+  "tags": [],
+  "pair": [
+   "Espresso",
+   "Café gelado"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Bebidas Geladas",
+  "name": "Café Gelado",
+  "desc": "300 ml. Café especial gelado, refrescante e levemente adocicado.",
+  "price": 18,
+  "img": "",
+  "tags": [],
+  "pair": [
+   "Pão de queijo",
+   "Brownie"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Bebidas Geladas",
+  "name": "Iced Latte",
+  "desc": "400 ml. Uma experiência sensorial revigorante: espresso, leite gelado e gelo em camadas.",
+  "price": 24,
+  "img": "",
+  "tags": [
+   "Destaque da Casa"
+  ],
+  "pair": [
+   "Croissant recheado",
+   "Waffle"
+  ],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Bebidas Geladas",
+  "name": "Soda Italiana de Morango",
+  "desc": "Morangos, gelo e água com gás. Leve, vermelha e muito fresca.",
+  "price": 16,
+  "img": "straw",
+  "tags": [
+   "Novo"
+  ],
+  "pair": [
+   "Torta de frango",
+   "Bolo de coco"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Bebidas Geladas",
+  "name": "Água Mineral",
+  "desc": "Sem gás ou com gás.",
+  "price": 6,
+  "img": "",
+  "tags": [],
+  "pair": [],
+  "from": false,
+  "est": false
+ },
+ {
+  "cat": "Métodos de Extração",
+  "name": "Café Coado V60",
+  "desc": "Extração manual que realça a acidez cítrica e as notas florais do grão. Limpo e delicado.",
+  "price": 18,
+  "img": "prensa",
+  "tags": [
+   "Novo"
+  ],
+  "pair": [
+   "Bolo de coco",
+   "Brownie"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Bebidas Geladas",
+  "name": "Espresso Tônica",
+  "desc": "Espresso sobre tônica gelada com rodela de laranja. Cítrico, amargo e refrescante.",
+  "price": 19,
+  "img": "espresso",
+  "tags": [
+   "Novo"
+  ],
+  "pair": [
+   "Pão de queijo"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Bebidas Geladas",
+  "name": "Frappé de Café",
+  "desc": "Café especial batido com gelo e leite, finalizado com chantilly e calda de caramelo.",
+  "price": 22,
+  "img": "",
+  "tags": [],
+  "pair": [
+   "Brownie",
+   "Waffle"
+  ],
+  "from": false,
+  "est": true
+ },
+ {
+  "cat": "Salgados & Croissants",
+  "name": "Croissant de Costela",
+  "desc": "Croissant folhado com costela desfiada e creme de queijo.",
+  "price": 34,
+  "img": "croissant",
+  "tags": [
+   "Destaque da Casa"
+  ],
+  "pair": [
+   "Café gelado"
+  ],
+  "from": false,
+  "est": true
+ }
+]
