@@ -7,10 +7,10 @@ type Sz = keyof typeof sizes;
 export default function Orders() {
   const [id, setId] = useState("rv");
   const [sz, setSz] = useState<Sz>("M");
-  const { f, bind } = useForm({ date: "", time: "", obs: "", name: "", phone: "" });
+  const { f, bind, set } = useForm({ date: "", time: "", obs: "", name: "", phone: "" });
   const form = useRef<HTMLDivElement>(null);
   const it = encomendas.find(e => e.id === id)!, s = sizes[sz];
-  const missing = [!f.date && "data", !f.time && "horário", !f.name.trim() && "nome", f.phone.replace(/\D/g, "").length < 10 && "telefone"].filter(Boolean) as string[];
+  const missing = [( !f.date || f.date < new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10)) && "data válida", (!f.time || (f.date === new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10) && f.time <= new Date().toTimeString().slice(0, 5))) && "horário futuro", !f.name.trim() && "nome", f.phone.replace(/\D/g, "").length < 10 && "telefone"].filter(Boolean) as string[];
   const msg = `Olá, Café Origem! Gostaria de fazer uma encomenda de bolo:
 🎂 Item: ${it.name}
 📏 Tamanho: ${s.label} (${s.info})
@@ -30,8 +30,8 @@ export default function Orders() {
         <div className="fld"><span>Tamanho</span></div>
         <div className="seg" style={{ marginTop: -8 }}>{(Object.keys(sizes) as Sz[]).map(k =>
           <button type="button" key={k} aria-pressed={sz === k} onClick={() => setSz(k)}>{sizes[k].label}<small>{sizes[k].info}</small><small>{BRL(it.base * sizes[k].mult)}*</small></button>)}</div>
-        <Field label="Data de retirada"><input type="date" {...bind("date")} /></Field>
-        <Field label="Horário de retirada"><TimeSelect {...bind("time")} /></Field>
+        <Field label="Data de retirada"><input type="date" min={new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10)} {...bind("date")} /></Field>
+        <div className="fld"><span>Horário de retirada</span><TimeSelect value={f.time} onChange={v => set("time", v)} /></div>
         <Field label="Observações (dedicatória, recheio, restrições)"><textarea {...bind("obs")} /></Field>
         <Field label="Nome completo"><input autoComplete="name" {...bind("name")} /></Field>
         <Field label="Telefone"><input type="tel" inputMode="tel" autoComplete="tel" placeholder="(38) 99999-9999" {...bind("phone", maskPhone)} /></Field>
