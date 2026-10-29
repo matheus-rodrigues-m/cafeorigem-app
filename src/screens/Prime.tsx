@@ -7,7 +7,7 @@ const dur = ["1 hora", "2 horas", "3 horas", "Meio período"] as const;
 const ppl = ["2 a 4 pessoas", "5 a 8 pessoas", "9 a 10 pessoas"] as const;
 export default function Prime() {
   const { f, set, bind } = useForm({ space: spaces[0].id as string, date: "", time: "", dur: "2 horas" as string, ppl: "2 a 4 pessoas" as string, name: "", company: "", phone: "" });
-  const missing = [!f.date && "data", !f.time && "horário", !f.name.trim() && "nome", f.phone.replace(/\D/g, "").length < 10 && "telefone"].filter(Boolean) as string[];
+  const missing = [( !f.date || f.date < new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10)) && "data válida", (!f.time || (f.date === new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10) && f.time <= new Date().toTimeString().slice(0, 5))) && "horário futuro", !f.name.trim() && "nome", f.phone.replace(/\D/g, "").length < 10 && "telefone"].filter(Boolean) as string[];
   const msg = `Olá, Café Origem! Gostaria de verificar a disponibilidade para agendamento corporativo:
 🏢 Espaço: ${f.space}
 📅 Data: ${f.date ? fd(f.date) : "—"}
@@ -22,8 +22,8 @@ Aguardo confirmação de disponibilidade e valores.`;
       <p style={{ color: "var(--e7)", margin: "4px 0 0" }}>{s.desc}</p><div className="chipl"><span>{s.cap}</span>{s.am.map(a => <span key={a}><Check size={11} style={{ verticalAlign: -1 }} /> {a}</span>)}</div></div></div>)}
       <div className="form"><h2>Pré-agendamento</h2>
         <Seg label="Ambiente" v={f.space} set={v => set("space", v)} opts={spaces.map(s => ({ v: s.id, t: s.id, s: s.cap }))} />
-        <Field label="Data da reserva"><input type="date" {...bind("date")} /></Field>
-        <Field label="Horário de início"><TimeSelect {...bind("time")} /></Field>
+        <Field label="Data da reserva"><input type="date" min={new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10)} {...bind("date")} /></Field>
+        <div className="fld"><span>Horário de início</span><TimeSelect value={f.time} onChange={v => set("time", v)} /></div>
         <Seg label="Duração" v={f.dur} set={v => set("dur", v)} opts={dur.map(d => ({ v: d, t: d }))} />
         <Seg label="Quantidade de pessoas" v={f.ppl} set={v => set("ppl", v)} opts={ppl.map(d => ({ v: d, t: d }))} />
         <Field label="Responsável"><input autoComplete="name" {...bind("name")} /></Field>
